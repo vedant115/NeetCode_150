@@ -7,7 +7,7 @@ You may return the answer in any order.
 """
 
 # method 1
-def topKFrequent(self, nums, k):
+def topKFrequent(nums, k):
     count = {}
     freq = [[] for i in range(len(nums) + 1)]
 
@@ -25,7 +25,7 @@ def topKFrequent(self, nums, k):
                 return res
 
 # method 2
-def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+def topKFrequent(nums, k):
     d = {}
     for i in nums:
         d[i] = d.get(i, 0) + 1
