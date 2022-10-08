@@ -11,7 +11,7 @@ Return the maximum amount of water a container can store.
 Notice that you may not slant the container.
 """
 
-# method 1 (brute force)
+# method 1 (brute force-O(n^2))
 def maxArea(height):
     ans=0
     for l in range(len(height)):
@@ -20,7 +20,7 @@ def maxArea(height):
             ans=max(ans, area)
     return ans
 
-# method 2
+# method 2 O(n)
 def maxArea(height):
     ans=0
     l, r = 0, len(height)-1
